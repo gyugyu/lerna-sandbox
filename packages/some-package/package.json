@@ -6,9 +6,11 @@
   "homepage": "https://github.com/gyugyu/lerna-sandbox#readme",
   "license": "MIT",
   "directories": {
+    "src": "src",
     "dist": "dist"
   },
   "files": [
+    "src",
     "dist"
   ],
   "repository": {
