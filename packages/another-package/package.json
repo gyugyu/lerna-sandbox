@@ -1,12 +1,11 @@
 {
-  "name": "@gyugyu/some-package",
+  "name": "@gyugyu/another-package",
   "version": "0.0.0",
   "description": "> TODO: description",
   "author": "Yusuke Yagyu <gyugyu@pepabo.com>",
   "homepage": "https://github.com/gyugyu/lerna-sandbox#readme",
   "license": "MIT",
   "main": "lib/index.js",
-  "types": "lib/index.d.ts",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -23,5 +22,8 @@
   },
   "bugs": {
     "url": "https://github.com/gyugyu/lerna-sandbox/issues"
+  },
+  "devDependencies": {
+    "typescript": "^3.8.3"
   }
 }
