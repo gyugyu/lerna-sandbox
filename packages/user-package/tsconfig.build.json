@@ -2,8 +2,7 @@
   "extends": "../../tsconfig.build.json",
 
   "compilerOptions": {
-    "jsx": "react",
-    "declaration": true
+    "jsx": "react"
   },
 
   "include": [

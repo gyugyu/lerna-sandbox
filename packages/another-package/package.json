@@ -8,12 +8,10 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "directories": {
-    "src": "src",
     "lib": "lib",
     "test": "__tests__"
   },
   "files": [
-    "src",
     "lib"
   ],
   "repository": {
@@ -22,7 +20,7 @@
   },
   "scripts": {
     "build": "npm run clean && npm run compile",
-    "compile": "webpack",
+    "compile": "tsc --project tsconfig.build.json",
     "clean": "rm -rf ./lib",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
@@ -32,18 +30,11 @@
   "devDependencies": {
     "@gyugyu/some-package": "^0.0.0",
     "@types/react": "^16.9.23",
-    "css-loader": "^3.4.2",
-    "declaration-bundler-webpack-plugin": "smol/declaration-bundler-webpack-plugin#master",
     "react": "^16.13.0",
-    "sass": "^1.26.2",
-    "sass-loader": "^8.0.2",
-    "style-loader": "^1.1.3",
-    "ts-loader": "^6.2.1",
-    "typescript": "^3.8.3",
-    "webpack": "^4.41.6",
-    "webpack-cli": "^3.3.11"
+    "typescript": "^3.8.3"
   },
   "peerDependencies": {
+    "@gyugyu/some-package": "^0.0.0",
     "react": "^16.13.0"
   }
 }

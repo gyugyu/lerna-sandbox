@@ -7,7 +7,7 @@ module.exports = {
     path: path.resolve(__dirname, './dist')
   },
   resolve: {
-    extensions: ['.js', '.ts', '.tsx']
+    extensions: ['.js', '.ts', '.tsx', '.css', '.scss']
   },
   module: {
     rules: [
@@ -17,6 +17,22 @@ module.exports = {
           loader: 'ts-loader',
           options: { configFile: 'tsconfig.build.json' }
         }]
+      },
+      {
+        test: /\.scss/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: { modules: true }
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              implementation: require('sass')
+            }
+          }
+        ]
       }
     ]
   }
