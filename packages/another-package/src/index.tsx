@@ -1,6 +1,6 @@
 import * as React from 'react'
-import classes from '@gyugyu/some-package/src/index.scss'
+import TsxComponent from './TsxComponent'
 
-export default () => {
-  return <div className={classes.foo}></div>
+export default {
+  TsxComponent
 }
