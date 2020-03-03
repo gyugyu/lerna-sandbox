@@ -28,8 +28,10 @@
     "url": "https://github.com/gyugyu/lerna-sandbox/issues"
   },
   "devDependencies": {
+    "@gyugyu/some-package": "^0.0.0",
     "@types/react": "^16.9.23",
     "css-loader": "^3.4.2",
+    "declaration-bundler-webpack-plugin": "smol/declaration-bundler-webpack-plugin#master",
     "react": "^16.13.0",
     "sass": "^1.26.2",
     "sass-loader": "^8.0.2",
